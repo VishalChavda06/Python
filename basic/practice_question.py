@@ -50,3 +50,67 @@ number = int(input("Eneter the number :"))
 if number % 2 == 0:
     print("The number is even.")
 else:    print("The number is odd.")
+
+
+
+# Create simple login system.
+
+userName = input("enter your username :")
+password = input("enter your password :")
+
+if userName == "admin" and password =="vishal123":
+    print("Login Successfull! 🎉")
+else:
+    print("Login Failed! ❌ Please check your username and password.")
+    
+
+# Take 3 numbers and print largest number.
+
+num1 = float(input("enter the first number :"))
+num2 = float(input("enter the second number :"))
+num3 = float(input("enter the third number :"))
+
+if num1 >= num2 and num1 >= num3:
+    print("The largest number is:", num1)
+elif num2 >= num1 and num2 >= num3:
+    print("The largest number is:", num2)
+else:
+    print("The largest number is:", num3)
+    
+    
+# Build mini calculator using conditions.
+number1 =int(input("Enter the first number:"))
+number2 =int(input("Enter the second number:"))
+operator = input("Enter the operator (+, -, *, /):")
+
+if operator == "+":
+    result = number1 + number2
+elif operator == "-":
+    result = number1 - number2
+elif operator == "*":
+    result = number1 * number2
+elif operator == "/":
+    result = number1 / number2 if number2 != 0 else "Error: Division by zero is not allowed."
+else:
+    result = "Error: Invalid operator."
+
+print("Result:", result)
+
+# ATM Withdrawal System
+
+account_balance = int(input("Enter your account balance: "))
+withdrawal_amount = int(input("Enter the withdrawal amount: "))
+
+if withdrawal_amount <= account_balance:
+    print("Withdrawal successful! Please take your cash.")
+else:
+    print("Insufficient funds! Withdrawal failed.")
+    
+# Simple Number Guessing Game
+
+guess_number = int(input("Guess a number between 1 and 10: "))
+secret_number = 7
+if guess_number == secret_number:
+    print("Congratulations! You guessed the correct number! 🎉")
+else:
+    print("Sorry, that's not the correct number. Try again! 😞")
