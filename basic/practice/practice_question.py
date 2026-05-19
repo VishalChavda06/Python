@@ -114,3 +114,42 @@ if guess_number == secret_number:
     print("Congratulations! You guessed the correct number! 🎉")
 else:
     print("Sorry, that's not the correct number. Try again! 😞")
+    
+# for and while loops
+
+for i in range(10):
+    print("sorry we not did it yet")
+
+# Print even numbers from 1 to 20.
+for i in range(1, 21):
+    if i % 2 == 0:
+        print(i)
+
+# Find sum of numbers from 1 to 10.
+total = 0
+for i in range(1, 11):
+    total += i
+print("Sum of numbers from 1 to 10:", total)
+
+# Print multiplication table of 5.
+number = 5
+while number <= 50:
+    print(number)
+    number += 5
+
+# print the star pattern
+rows = 5
+for i in range(1, rows + 1):
+    print("* " * i)
+
+# reverse star pattern
+rows = 5
+for i in range(rows, 0, -1):
+    print("* " * i)
+
+# Countdown Program
+count = 10
+while count > 0:
+    print(count)
+    count -= 1
+print("Liftoff! 🚀")
