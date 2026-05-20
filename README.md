@@ -1,14 +1,16 @@
 # 🐍 Python Learning Journey — Vishal Chavda
 
 ![Python](https://img.shields.io/badge/Python-3.9.6-blue?style=for-the-badge&logo=python&logoColor=white)
-![Status](https://img.shields.io/badge/Status-In%20Progress-orange?style=for-the-badge)
-![Stage](https://img.shields.io/badge/Stage-1%20Basics-green?style=for-the-badge)
-![Lessons](https://img.shields.io/badge/Lessons%20Done-6%20of%2016-yellow?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Stage%201%20Complete!-brightgreen?style=for-the-badge)
+![Stage](https://img.shields.io/badge/Current-Stage%202%20OOP-blue?style=for-the-badge)
+![Lessons](https://img.shields.io/badge/Lessons%20Done-8%20of%2020-yellow?style=for-the-badge)
 
 > 🎓 **Taught by:** PyGuru — A friendly AI Python Tutor
 > 📅 **Started:** May 18, 2026
-> 💻 **Editor:** VS Code + Programiz Online Compiler
+> 🏆 **Stage 1 Completed:** May 20, 2026
+> 💻 **Editor:** VS Code
 > 🖥️ **OS:** macOS
+> 🐍 **Python Version:** 3.9.6
 
 ---
 
@@ -16,16 +18,31 @@
 
 | Stage | Topic | Status | Progress |
 |-------|-------|--------|----------|
-| 🟢 Stage 1 | Python Basics | 🔄 In Progress | 6 / 8 Lessons |
-| 🔵 Stage 2 | Object Oriented Programming (OOP) | ⏳ Pending | 0 / 4 Lessons |
+| 🟢 Stage 1 | Python Basics | ✅ COMPLETE! | 8 / 8 Lessons |
+| 🔵 Stage 2 | Object Oriented Programming (OOP) | 🔄 Up Next | 0 / 4 Lessons |
 | 🟣 Stage 3 | File Handling & APIs | ⏳ Pending | 0 / 4 Lessons |
 | 🔴 Stage 4 | Data Structures & Algorithms | ⏳ Pending | 0 / 4 Lessons |
 
 ---
 
-## ✅ STAGE 1 — Python Basics
+## 📈 Progress Tracker
 
-### Lesson 1 — What is Python & `print()` ✅
+```
+Stage 1 — Basics        ████████████████  8/8  Lessons ✅ COMPLETE!
+Stage 2 — OOP           ░░░░░░░░░░░░░░░░  0/4  Lessons ⏳ Up Next
+Stage 3 — Files & APIs  ░░░░░░░░░░░░░░░░  0/4  Lessons ⏳ Pending
+Stage 4 — DSA           ░░░░░░░░░░░░░░░░  0/4  Lessons ⏳ Pending
+
+Overall: ████░░░░░░░░░░░░░░░░  8/20  Lessons Complete (40%)
+```
+
+---
+
+# ✅ STAGE 1 — Python Basics (COMPLETE! 🏆)
+
+---
+
+## Lesson 1 — What is Python & `print()` ✅
 
 > 🐍 Python is a programming language used to talk to the computer — like a language, but for machines!
 
@@ -33,90 +50,81 @@
 - 🔹 Used in Web Development, AI, Data Science, Automation & more
 - 🔹 Very beginner friendly — reads almost like normal English
 - 🔹 `print()` is the first function every Python developer learns
-- 🔹 Whatever you write inside `print(" ")` gets displayed on the screen
+- 🔹 Whatever you write inside `print(" ")` gets displayed on screen
+- 🔹 Text inside `" "` is called a **String**
 
 ```python
-print("Hello, World!")         # Output: Hello, World!
-print("I am learning Python!") # Output: I am learning Python!
+print("Hello, World!")          # Output: Hello, World!
+print("I am learning Python!")  # Output: I am learning Python!
 ```
 
-💡 **Pro Tip:** Real developers use `print()` for debugging — checking what is happening inside their code!
+> 💡 **Pro Tip:** Real developers use `print()` for debugging —
+> checking what is happening inside their code at any point!
 
 ---
 
-### Lesson 2 — Variables & Data Types ✅
+## Lesson 2 — Variables & Data Types ✅
 
 > 📦 A Variable is like a labeled box — you give it a name and store a value inside it!
 
-#### 🔸 What is a Variable?
 - 🔹 A variable stores a value that you can use later in your program
 - 🔹 You create a variable by writing: `variable_name = value`
-- 🔹 Variable names should be clear and descriptive
 - 🔹 Python uses **snake_case** style → `my_name`, `total_runs`, `is_student`
+- 🔹 Variable names should be clear and descriptive
 
 #### 🔸 The 4 Main Data Types
 
 | Data Type | Meaning | Example |
 |-----------|---------|---------|
-| `int` | Whole number (કોઈ દશાંશ નહીં) | `18`, `100`, `500` |
-| `float` | Decimal number (દશાંશ સાથે) | `5.9`, `3.14`, `52.50` |
-| `str` | Text / String (અક્ષરો) | `"Vishal"`, `"Surat"` |
-| `bool` | True or False only (હા કે ના) | `True`, `False` |
+| `int` | Whole number | `18`, `100`, `500` |
+| `float` | Decimal number | `5.9`, `3.14`, `52.50` |
+| `str` | Text / String | `"Vishal"`, `"Surat"` |
+| `bool` | True or False only | `True`, `False` |
 
 ```python
-my_name    = "Vishal Chavda"   # str   → text
-my_age     = 18                # int   → whole number
-my_height  = 5.8               # float → decimal number
-is_student = True              # bool  → True or False
-```
+my_name    = "Vishal Chavda"   # str
+my_age     = 18                # int
+my_height  = 5.8               # float
+is_student = True              # bool
 
-#### 🔸 f-Strings — Print Variables with Text
-- 🔹 f-strings let you mix variables inside text easily
-- 🔹 Put `f` before the quotes and wrap variables in `{ }`
-
-```python
+# f-string — mix variables with text
 print(f"My name is {my_name} and I am {my_age} years old.")
-# Output: My name is Vishal Chavda and I am 18 years old.
 ```
 
-💡 **Pro Tip:** Always use `snake_case` for variable names in Python — it is the official Python style (called PEP 8)!
+> 💡 **Pro Tip:** Always use `snake_case` for variable names —
+> it is the official Python style guide called **PEP 8**!
 
 ---
 
-### Lesson 3 — User Input & Type Conversion ✅
+## Lesson 3 — User Input & Type Conversion ✅
 
-> ⌨️ Instead of writing values yourself, `input()` lets the USER type their own value — like a real app!
+> ⌨️ `input()` lets the USER type their own value — making programs interactive!
 
-#### 🔸 What is `input()`?
-- 🔹 `input()` pauses the program and waits for the user to type something
-- 🔹 It always returns a **String** — even if the user types a number!
-- 🔹 Whatever message you write inside `input(" ")` is shown to the user
-
-#### 🔸 What is Type Conversion?
-- 🔹 Since `input()` always gives a string, we need to **convert** it when we want to do math
+- 🔹 `input()` always returns a **String** — even if the user types a number!
+- 🔹 Need to do math? Convert using `int()` or `float()`
 - 🔹 `int()` → converts to whole number
 - 🔹 `float()` → converts to decimal number
 - 🔹 `str()` → converts to text
 
 ```python
 name   = input("Enter your name: ")           # already a string ✅
-age    = int(input("Enter your age: "))        # convert to int for math ✅
+age    = int(input("Enter your age: "))        # convert to int ✅
 height = float(input("Enter your height: "))   # convert to float ✅
 
 print(f"In 5 years, {name} will be {age + 5} years old!")
 ```
 
-⚠️ **Warning:** If you forget `int()` and try to do math — Python will give a `TypeError`!
-
-💡 **Pro Tip:** Always ask yourself — *"Do I need to do math with this value?"* If YES → use `int()` or `float()`!
+> ⚠️ **Warning:** Forgetting `int()` and doing math = `TypeError`!
+> 💡 **Pro Tip:** Always ask — *"Do I need math with this value?"*
+> If YES → use `int()` or `float()`!
 
 ---
 
-### Lesson 4 — Operators ✅
+## Lesson 4 — Operators ✅
 
-> ➕ Operators are special symbols that tell Python to DO something with your values!
+> ➕ Operators are symbols that tell Python to DO something with values!
 
-#### 🔸 Math Operators (ગણિત)
+#### 🔸 Math Operators
 
 | Operator | Meaning | Example | Result |
 |----------|---------|---------|--------|
@@ -124,209 +132,361 @@ print(f"In 5 years, {name} will be {age + 5} years old!")
 | `-` | Subtract | `10 - 5` | `5` |
 | `*` | Multiply | `10 * 5` | `50` |
 | `/` | Divide | `10 / 3` | `3.333` |
-| `//` | Floor Divide (whole number only) | `10 // 3` | `3` |
-| `%` | Modulus / Remainder (બાકીનું) | `10 % 3` | `1` |
-| `**` | Power / Exponent (ઘાત) | `2 ** 3` | `8` |
+| `//` | Floor Divide | `10 // 3` | `3` |
+| `%` | Remainder | `10 % 3` | `1` |
+| `**` | Power | `2 ** 3` | `8` |
 
-#### 🔸 Comparison Operators (સરખામણી) — Always give `True` or `False`
+#### 🔸 Comparison Operators — Always give `True` or `False`
 
 | Operator | Meaning | Example | Result |
 |----------|---------|---------|--------|
 | `==` | Equal to | `5 == 5` | `True` |
-| `!=` | Not equal to | `5 != 3` | `True` |
+| `!=` | Not equal | `5 != 3` | `True` |
 | `>` | Greater than | `10 > 5` | `True` |
 | `<` | Less than | `3 < 1` | `False` |
-| `>=` | Greater than or equal | `5 >= 5` | `True` |
-| `<=` | Less than or equal | `3 <= 5` | `True` |
+| `>=` | Greater or equal | `5 >= 5` | `True` |
+| `<=` | Less or equal | `3 <= 5` | `True` |
 
-#### 🔸 Logical Operators (તર્કિક)
+#### 🔸 Logical Operators
 
 | Operator | Meaning | Example | Result |
 |----------|---------|---------|--------|
-| `and` | Both must be True | `True and True` | `True` |
-| `or` | At least one True | `True or False` | `True` |
-| `not` | Flip True↔False | `not True` | `False` |
+| `and` | Both True | `True and True` | `True` |
+| `or` | One True | `True or False` | `True` |
+| `not` | Flip | `not True` | `False` |
 
 ```python
 score = 85
-print(score >= 50 and score < 100)   # True — both conditions met!
+print(score >= 50 and score < 100)   # True
 print(score % 2 == 0)                # False — 85 is odd!
 ```
 
-⚠️ **Critical:** `=` stores a value. `==` compares values. NEVER mix them up!
-
-💡 **Pro Tip:** Use `%` to check even/odd → `number % 2 == 0` means even!
+> ⚠️ **Critical:** `=` stores a value. `==` compares. NEVER mix them!
+> 💡 **Pro Tip:** Use `%` to check even/odd → `number % 2 == 0` means even!
 
 ---
 
-### Lesson 5 — Conditions (if / elif / else) ✅
+## Lesson 5 — Conditions (if / elif / else) ✅
 
-> 🧠 Conditions give your program a BRAIN — it can look at a situation and decide what to do!
+> 🧠 Conditions give your program a BRAIN — it can make decisions!
 
-#### 🔸 How it works
-- 🔹 `if` → checks the first condition
-- 🔹 `elif` → checks the next condition (if first was False)
+- 🔹 `if` → checks first condition
+- 🔹 `elif` → checks next condition if first was False
 - 🔹 `else` → runs when NO condition above was True
-- 🔹 Python checks **top to bottom** — first True condition wins, rest are skipped!
-- 🔹 **Indentation** (4 spaces) is REQUIRED inside every if/elif/else block
-
-#### 🔸 Structure
-
-```python
-if condition:
-    # runs if condition is True
-elif another_condition:
-    # runs if this condition is True
-else:
-    # runs when nothing above matched
-```
-
-#### 🔸 Real Example — IPL Match Result
+- 🔹 Python checks **top to bottom** — first True wins, rest skip!
+- 🔹 **Indentation** (4 spaces) is REQUIRED — forgetting = ERROR!
 
 ```python
 runs   = int(input("Enter runs: "))
 target = int(input("Enter target: "))
 
 if runs > target:
-    print("🏆 We WON the match!")
+    print("🏆 We WON!")
 elif runs == target:
     print("🤝 It's a TIE!")
 else:
     difference = target - runs
-    print(f"😞 We lost by {difference} runs.")
+    print(f"😞 Lost by {difference} runs.")
 ```
 
-#### 🔸 Conditions with `and` / `or`
-
-```python
-age    = int(input("Enter age: "))
-has_id = input("Have ID? (yes/no): ")
-
-if age >= 18 and has_id == "yes":
-    print("✅ Entry allowed!")
-elif age >= 18 and has_id == "no":
-    print("⚠️ Bring your ID!")
-else:
-    print("❌ Too young to enter!")
-```
-
-⚠️ **Warning:** Forgetting indentation = instant Python ERROR!
-
-💡 **Pro Tip:** Always test your conditions with **edge cases** — like what if the value is 0? Or exactly equal to the limit?
+> 💡 **Pro Tip:** Always test **edge cases** — what if value is 0?
+> Or exactly equal to the limit? Good developers always think this way!
 
 ---
 
-### Lesson 6 — Loops (for & while) ✅
+## Lesson 6 — Loops (for & while) ✅
 
-> 🔁 A Loop tells Python — "Repeat this again and again until I say stop!"
+> 🔁 Loops tell Python — "Repeat this again and again until I say stop!"
 
 #### 🔸 The `for` Loop — When you KNOW how many times
 
-- 🔹 Use `for` when the number of repetitions is known
-- 🔹 `range(start, stop)` → generates numbers from start to stop-1
-- 🔹 `range(1, 11)` → gives 1, 2, 3 ... 10 (11 is NOT included!)
+- 🔹 Use when repetitions are known in advance
+- 🔹 `range(start, stop)` → stop value is NOT included!
+- 🔹 `range(1, 11)` → gives 1 to 10
 - 🔹 `range(1, 10, 2)` → gives 1, 3, 5, 7, 9 (step of 2)
 
 ```python
-# Print each over's score
 total = 0
 for over in range(1, 6):       # over 1 to 5
-    total += 8                 # add 8 runs each over
+    total += 8
     print(f"Over {over}: Total = {total}")
 ```
 
-#### 🔸 The `while` Loop — When condition controls the repeat
+#### 🔸 The `while` Loop — When condition controls repeat
 
-- 🔹 Use `while` when you don't know exactly how many times
-- 🔹 Keeps repeating as long as the condition is `True`
-- 🔹 Always make sure the condition eventually becomes `False` — or use `break`!
-- 🔹 **Infinite loop** = loop that never stops → press `Ctrl + C` to force stop!
+- 🔹 Keeps repeating as long as condition is `True`
+- 🔹 Always make condition False eventually — or use `break`!
+- 🔹 Infinite loop → press `Ctrl + C` to force stop!
+- 🔹 `while True + break` → most used pattern in real apps!
 
 ```python
-# Number guessing game
 secret = 7
-while True:                              # keep going forever...
+while True:
     guess = int(input("Guess: "))
     if guess == secret:
         print("🎉 Correct!")
-        break                            # ...until we break out!
+        break
     else:
         print("❌ Try again!")
 ```
 
-#### 🔸 for vs while — Quick Guide
+#### 🔸 for vs while
 
 | Situation | Use |
 |-----------|-----|
-| Know exactly how many times | `for` loop |
-| Keep going until something changes | `while` loop |
-| Going through a list | `for` loop |
-| Waiting for correct user input | `while` loop |
+| Know exactly how many times | `for` |
+| Keep going until something changes | `while` |
+| Going through a list | `for` |
+| Waiting for correct user input | `while` |
 
-#### 🔸 Loop + Condition Combo (Very Powerful! 🔥)
+> 💡 **Pro Tip:** Use `total += value` instead of `total = total + value` —
+> same result, cleaner code. Real developers always use `+=`!
+
+---
+
+## Lesson 7 — Functions ✅
+
+> 🔧 A Function is a reusable block of code — write once, use forever!
+
+- 🔹 `def` keyword creates a function
+- 🔹 **Parameters** → inputs given to the function `(name, runs)`
+- 🔹 **Return** → sends result back so you can use it later
+- 🔹 **Call** → use the function by writing its name + `()`
+- 🔹 **Default parameters** → value used when nothing is passed
+- 🔹 Functions can call other functions — this is how real apps work!
+- 🔹 One function = One job only! (**Single Responsibility**)
 
 ```python
-for i in range(1, 11):
-    if i % 2 == 0:
-        print(f"{i} is even ✅")
+# Basic function
+def greet(name, city="Surat"):         # city has default value
+    print(f"Hello {name} from {city}!")
+
+# Function with return
+def calc_run_rate(runs, overs):
+    rate = round(runs / overs, 2)
+    return rate                         # send result back!
+
+# Functions calling each other
+def get_grade(runs):
+    if runs >= 100:
+        return "🏆 Century! Legend!"
+    elif runs >= 50:
+        return "⭐ Half Century!"
+    elif runs >= 30:
+        return "👍 Good knock!"
     else:
-        print(f"{i} is odd ❌")
+        return "😐 Keep practicing!"
+
+def print_report(name, runs, balls):
+    rate  = calc_run_rate(runs, balls)  # calling another function!
+    grade = get_grade(runs)             # calling another function!
+    print(f"""
+═══════════════════════════
+🏏 CRICKET REPORT
+Player  : {name}
+Runs    : {runs}
+SR      : {rate}
+Grade   : {grade}
+═══════════════════════════""")
+
+print_report("Vishal", 85, 50)
 ```
 
-💡 **Pro Tip:** Use `total += value` instead of `total = total + value` — same result, cleaner code! Real developers always use `+=`!
+> 💡 **Pro Tip:** Function name should tell you EXACTLY what it does —
+> just by reading it! This is called **self-documenting code**!
 
 ---
 
-## ⏳ PENDING LESSONS
+## Lesson 8 — Lists, Tuples, Dictionaries & Sets ✅
 
-### 🟢 Stage 1 — Still to Complete
+> 📦 Data Structures store MULTIPLE values in ONE variable!
 
-#### Lesson 7 — Functions ⏳
-> A Function is a reusable block of code that does one specific job!
-- 🔹 Write code once — use it 100 times
-- 🔹 Uses `def` keyword to define a function
-- 🔹 Can take **parameters** (inputs) and **return** values (outputs)
-- 🔹 Keeps code clean, organised, and non-repetitive
+#### 🔸 Quick Memory Trick — Pizza Party! 🍕
 
-#### Lesson 8 — Lists, Tuples, Dictionaries & Sets ⏳
-> Data Structures that store multiple values in one variable!
-- 🔹 **List** → ordered, changeable collection → `[1, 2, 3]`
-- 🔹 **Tuple** → ordered, unchangeable collection → `(1, 2, 3)`
-- 🔹 **Dictionary** → key-value pairs → `{"name": "Vishal", "age": 18}`
-- 🔹 **Set** → unique values only, no duplicates → `{1, 2, 3}`
+```
+LIST   → Guest list   — ordered, add/remove anytime      [ ]
+TUPLE  → Pizza recipe — fixed steps, NEVER change        ( )
+DICT   → Guest orders — each person's specific order    { : }
+SET    → Unique toppings — no repeats, ever!             { }
+```
+
+#### 🔸 LIST `[ ]` — Ordered & Changeable
+
+- 🔹 Items stay in the order you put them
+- 🔹 Can add, remove, update items
+- 🔹 Allows duplicate values
+- 🔹 **Index starts from 0** — not 1! ⚠️
+- 🔹 Negative index → `-1` = last item
+
+```python
+players = ["Vishal", "Rohit", "Dhoni", "Kohli"]
+
+print(players[0])         # Vishal  — first item
+print(players[-1])        # Kohli   — last item
+print(len(players))       # 4
+
+players.append("Bumrah")  # add at end
+players.insert(1, "SKY")  # add at position
+players.remove("Rohit")   # remove by value
+players.pop()             # remove last item
+
+# Loop through list
+for i, player in enumerate(players, 1):
+    print(f"{i}. {player}")
+```
+
+#### 🔸 TUPLE `( )` — Ordered & FIXED
+
+- 🔹 Cannot add, remove or update once created
+- 🔹 Use for data that should NEVER change
+- 🔹 Faster than lists for fixed data
+
+```python
+ipl_teams = ("MI", "CSK", "RCB", "KKR", "SRH")
+print(ipl_teams[0])    # MI
+print(len(ipl_teams))  # 5
+# ipl_teams[0] = "DC"  ← ERROR! Cannot change tuple!
+```
+
+#### 🔸 DICTIONARY `{ key: value }` — Key-Value Pairs
+
+- 🔹 Access values using KEY name — not index number
+- 🔹 Keys must be unique
+- 🔹 Can add, update, remove key-value pairs
+- 🔹 Best for structured data like profiles
+
+```python
+player = {
+    "name"   : "Vishal Chavda",
+    "age"    : 18,
+    "city"   : "Surat",
+    "runs"   : 850,
+    "team"   : "MI"
+}
+
+print(player["name"])       # Vishal Chavda
+player["runs"] = 1000       # update value
+player["wickets"] = 25      # add new key
+del player["age"]           # remove key
+
+# Loop through dictionary
+for key, value in player.items():
+    print(f"{key} : {value}")
+```
+
+#### 🔸 SET `{ }` — Unique Values Only
+
+- 🔹 Automatically removes duplicates
+- 🔹 No order — no index access
+- 🔹 Best for checking membership and unique collections
+
+```python
+countries = {"India", "Australia", "England", "India"}
+print(countries)              # {'India', 'Australia', 'England'}
+
+countries.add("West Indies")
+countries.remove("England")
+print("India" in countries)   # True
+```
+
+#### 🔸 Combine List + Dictionary (Most Powerful! 🔥)
+
+```python
+team = [
+    {"name": "Vishal", "runs": 85,  "balls": 50},
+    {"name": "Rohit",  "runs": 120, "balls": 80},
+    {"name": "Dhoni",  "runs": 60,  "balls": 30},
+]
+
+for player in team:
+    sr = round((player["runs"] / player["balls"]) * 100, 2)
+    print(f"🏏 {player['name']} → Runs: {player['runs']} | SR: {sr}")
+```
+
+#### 🔸 All 4 Compared
+
+| Feature | List `[]` | Tuple `()` | Dict `{}` | Set `{}` |
+|---------|-----------|------------|-----------|---------|
+| Ordered | ✅ | ✅ | ✅ | ❌ |
+| Changeable | ✅ | ❌ | ✅ | ✅ |
+| Duplicates | ✅ | ✅ | ❌ keys | ❌ |
+| Access by | Index | Index | Key | — |
+
+> 💡 **Pro Tip:** List of Dictionaries is the most used pattern in
+> real Python — APIs, databases, and JSON data all look exactly like this!
 
 ---
 
-### 🔵 Stage 2 — OOP (Object Oriented Programming) ⏳
+# 🎮 PROJECT — Quiz Game (Built from Scratch!)
+
+> Vishal built a fully working Quiz Game using ONLY Lessons 1-6!
+> No tutorials. No help. Pure self-learning! 🏆
+
+#### Features built:
+- 🔹 Multiple questions with options
+- 🔹 User input for answers
+- 🔹 Score tracking with `score += 1`
+- 🔹 Correct / Wrong feedback with emojis
+- 🔹 Final score display
+
+```python
+print("Welcome to the Quiz Game! 🎉")
+score = 0
+
+# Question 1
+print("\nQuestion 1: What is 2+2?")
+print("a) 3  b) 4  c) 5")
+answer = input("Enter your answer: ")
+if answer == "b":
+    print("Correct! ✅")
+    score += 1
+else:
+    print("Wrong! ❌")
+
+print(f"\nYour final score: {score}/3 🎮")
+```
+
+> 🚀 **Next Version — Quiz Game BEAST MODE** coming soon!
+> Will use: Lists + Dictionaries + Functions + Score grades!
+
+---
+
+# ⏳ STAGE 2 — OOP (Object Oriented Programming) — UP NEXT!
+
+> 🔵 The biggest concept jump in Python — thinking in objects!
 
 #### What's Coming:
+
 - 🔹 **Classes & Objects** → Blueprint and real things made from it
-- 🔹 **`__init__` method & `self`** → How objects are created
-- 🔹 **Inheritance** → One class getting properties of another
-- 🔹 **Encapsulation** → Hiding data inside a class
-- 🔹 **Polymorphism** → Same method, different behaviour
-- 🔹 **Magic Methods** → `__str__`, `__len__`, and more
+  - Class = blueprint (design) of a car 🚗
+  - Object = actual car made from that blueprint!
+- 🔹 **`__init__` method** → runs automatically when object is created
+- 🔹 **`self` keyword** → refers to the object itself
+- 🔹 **Inheritance** → one class getting all properties of another
+- 🔹 **Encapsulation** → hiding data safely inside a class
+- 🔹 **Polymorphism** → same method, different behaviour
+- 🔹 **Magic Methods** → `__str__`, `__len__`, `__repr__` and more
 
 ---
 
-### 🟣 Stage 3 — File Handling & APIs ⏳
+# ⏳ STAGE 3 — File Handling & APIs — PENDING
 
 #### What's Coming:
 - 🔹 **Reading & Writing Files** → `.txt`, `.csv`, `.json`
-- 🔹 **Exception Handling** → `try` / `except` to handle errors gracefully
-- 🔹 **Working with APIs** → Using `requests` library to get live data
-- 🔹 **Parsing JSON** → Reading API responses
+- 🔹 **Exception Handling** → `try` / `except` — handle errors gracefully
+- 🔹 **Working with APIs** → `requests` library — get live data!
+- 🔹 **Parsing JSON** → reading real API responses
 
 ---
 
-### 🔴 Stage 4 — Data Structures & Algorithms ⏳
+# ⏳ STAGE 4 — Data Structures & Algorithms — PENDING
 
 #### What's Coming:
-- 🔹 **Stacks & Queues** → Special ways to organise data
-- 🔹 **Linked Lists** → Chain of connected data nodes
+- 🔹 **Stacks & Queues** → special ways to organise data
+- 🔹 **Linked Lists** → chain of connected data nodes
 - 🔹 **Searching** → Linear search & Binary search
 - 🔹 **Sorting** → Bubble sort, Merge sort, Quick sort
-- 🔹 **Recursion** → Functions that call themselves!
+- 🔹 **Recursion** → functions that call themselves!
 
 ---
 
@@ -336,12 +496,18 @@ for i in range(1, 11):
 📁 PYTHON/
 │
 ├── 📁 basic/
-│   ├── 🐍 main.py                  # First programs & examples
-│   ├── 🐍 practice_question.py     # All practice exercises (139+ lines!)
-│   ├── 🐍 condition_practice.py    # Lesson 5 — if/elif/else practice
-│   ├── 🐍 Loops_for_while.py       # Lesson 6 — for & while loops
-│   ├── 🐍 mid_level_practice.py    # Intermediate level practice
-│   └── 📄 README.md                # This file!
+│   │
+│   └── 📁 practice/
+│       ├── 🐍 functions_practice.py    # Lesson 7 — Functions
+│       ├── 🐍 list_tuples_sets.py      # Lesson 8 — Data Structures
+│       ├── 🐍 mid_level_practice.py    # Intermediate practice
+│       ├── 🐍 practice_question.py     # All exercises (139+ lines!)
+│       ├── 🐍 quiz_game.py             # 🎮 Self-built Quiz Game!
+│       ├── 🐍 condition_practice.py    # Lesson 5 — Conditions
+│       ├── 🐍 function.py              # Function experiments
+│       ├── 🐍 Loops_for_while.py       # Lesson 6 — Loops
+│       ├── 🐍 main.py                  # First programs
+│       └── 📄 README.md               # This file!
 ```
 
 ---
@@ -349,73 +515,37 @@ for i in range(1, 11):
 ## 🛠️ Tools & Setup
 
 - 💻 **Editor:** VS Code (Visual Studio Code)
-- 🌐 **Online Compiler:** [Programiz Python Compiler](https://www.programiz.com/python-programming/online-compiler/)
+- 🌐 **Online Compiler:** [Programiz](https://www.programiz.com/python-programming/online-compiler/)
 - 🐍 **Python Version:** 3.9.6 (xcode)
 - 🖥️ **Terminal:** zsh — macOS
-- 📦 **No extra libraries needed** for Stage 1!
+- 📦 **Libraries used so far:** None — pure Python!
 
 ---
 
-## 🏆 Key Concepts Learned So Far
+## 🏆 Key Milestones
 
-```python
-# ✅ print()
-print("Hello World!")
-
-# ✅ Variables & Data Types
-name = "Vishal"       # str
-age  = 18             # int
-gpa  = 9.2            # float
-active = True         # bool
-
-# ✅ User Input & Type Conversion
-age = int(input("Enter age: "))
-
-# ✅ Operators
-result = (runs / balls) * 100    # math
-is_win = score >= target         # comparison → True/False
-valid  = age >= 18 and has_id    # logical
-
-# ✅ Conditions
-if score > target:
-    print("Won!")
-elif score == target:
-    print("Tie!")
-else:
-    print("Lost!")
-
-# ✅ Loops
-for i in range(1, 6):       # for loop
-    print(i)
-
-while True:                  # while loop
-    guess = int(input())
-    if guess == 7:
-        break
-```
-
----
-
-## 📈 Progress Tracker
-
-```
-Stage 1 — Basics        ████████████░░░░  6/8  Lessons ✅
-Stage 2 — OOP           ░░░░░░░░░░░░░░░░  0/4  Lessons ⏳
-Stage 3 — Files & APIs  ░░░░░░░░░░░░░░░░  0/4  Lessons ⏳
-Stage 4 — DSA           ░░░░░░░░░░░░░░░░  0/4  Lessons ⏳
-
-Overall: ████░░░░░░░░░░░░  6/20  Lessons Complete (30%)
-```
+| Date | Achievement |
+|------|-------------|
+| May 18, 2026 | Started Python — first `print()` |
+| May 18, 2026 | Installed VS Code — ran first terminal command |
+| May 19, 2026 | Built Quiz Game from scratch — self taught! |
+| May 19, 2026 | Used `while True + break` without being taught! |
+| May 20, 2026 | ✅ **Stage 1 COMPLETE — 8/8 Lessons!** |
+| May 20, 2026 | Built Cricket Report Generator with Functions |
 
 ---
 
 ## 💬 About This Journey
 
-> *"Every expert was once a beginner. Vishal started with zero coding experience and is now writing real Python programs in VS Code, running them in terminal, and organising code like a professional developer — all within the first 2 days!"*
+> *"Vishal started with zero coding experience on May 18, 2026.
+> By May 20 — just 3 days later — he had completed all 8 lessons
+> of Stage 1, built multiple real programs, installed VS Code,
+> run code in terminal, and self-built a Quiz Game without being asked.
+> That is not beginner behaviour. That is developer DNA."*
 >
 > — PyGuru 🐍
 
 ---
 
-*📅 Last Updated: May 19, 2026*
-*🐍 Keep Coding, Keep Growing — Jai Python! 🙏*
+*📅 Last Updated: May 20, 2026*
+*🐍 Stage 1 Complete — Stage 2 OOP Loading... 🔵*
